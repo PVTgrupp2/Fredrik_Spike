@@ -10,29 +10,68 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<div data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
+	<div data-role="page" id="index" data-theme="a">
+			<div data-role="header" data-position="inline">
 			<h1>Start</h1>
-		</div>
+			</div>
 		<div data-role="content" data-theme="a">
 
-		<div data-role="content" data-theme="b">
 
 			<p>Hej och välkommen till Öl och Whisky mässans applikation som hjälper dig att
 			betygsätta och hålla koll på vilka öl du provat!
 			<img src="beer2.jpg" size=60%></p>
 		</div>
+	</div>	
+
+		<div data-role="page" id="top">
+			<div data-role="content" data-theme="a">
+				<p>De poppuläraste dryckena på mässan</p>
+			<ol data-role="listview">
+				<li > 
+				<a href="öl1"><h6>Wisby Pils</h6></a>
+				</li>
+				<li> 
+				<a href="öl2"><h6>Falcon Bayersk</h6></a>
+				</li>
+				<li > 
+				<a href="öl1"><h6>Carlsberg hof</h6></a>
+				</li>
+				<li> 
+				<a href="öl2"><h6>Tanquray 10</h6></a>
+				</li>
+				<li > 
+				<a href="öl1"><h6>KUNG</h6></a>
+				</li>
+				<li> 
+				<a href="öl2"><h6>7.2an</h6></a>
+				</li>
+				<li > 
+				<a href="öl1"><h6>Miller</h6></a>
+				</li>
+				<li> 
+				<a href="öl2"><h6>Bud</h6></a>
+				</li>
+				<li > 
+				<a href="öl1"><h6>Makers Mark</h6></a>
+				</li>
+				<li> 
+				<a href="öl2"><h6>Havana Club 3 anejos</h6></a>
+				</li>
+			</ol>
+		
+			</div>
+		</div>	
+
 
 		<div data-role="footer" data-id"foo1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
-			<li><a href="a.html"class="ui-btn-active ui-state-persist"  data-transition="none">Topplista</a></li>
-			<li><a href="b.html" class="ui-btn-active ui-state-persist" data-transition="none" >Karta</a></li>
-			<li><a href="c.html" class="ui-btn-active ui-state-persist" data-transition="none">Sök</a></li>
-			<li><a href="d.html" class="ui-btn-active ui-state-persist" data-transition="none">Min sida</a></li>
-		</ul>
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#top">Topplista</a></li>
+				<li><a href="b.html" class="ui-btn-active ui-state-persist" data-transition="none" >Karta</a></li>
+				<li><a href="c.html" class="ui-btn-active ui-state-persist" data-transition="none">Sök</a></li>
+				<li><a href="d.html" class="ui-btn-active ui-state-persist" data-transition="none">Min sida</a></li>
+				</ul>
+			</div>
 		</div>
-		</div>
-	</div>
 </body>
 </html>
